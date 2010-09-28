@@ -1,2 +1,14 @@
 options:
   charset: utf8
+  
+ToodledoAccount
+  columns:
+    userid:
+      type: string(255)
+      unique: true
+      notnull: true
+    password:
+      type: string(255)
+      notnull: true
+  actAs:
+    Timestampable: ~
