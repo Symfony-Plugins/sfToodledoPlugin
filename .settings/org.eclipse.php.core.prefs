@@ -1,7 +1,0 @@
-#Tue Sep 28 20:19:32 CEST 2010
-eclipse.preferences.version=1
-include_path=0;/sfToodledoPlugin
-org.eclipse.php.core.phpForamtterIndentationSize=2
-org.eclipse.php.core.phpForamtterUseTabs=false
-phpVersion=php5
-use_asp_tags_as_php=false
