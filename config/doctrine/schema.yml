@@ -1,7 +1,7 @@
 options:
   charset: utf8
   
-ToodledoAccount
+ToodledoAccount:
   columns:
     userid:
       type: string(255)
@@ -10,5 +10,15 @@ ToodledoAccount
     password:
       type: string(255)
       notnull: true
+    sf_guard_user_id:
+      type: integer
+      primary: true
+  relations:
+    User:
+      class: sfGuardUser
+      local: sf_guard_user_id
+      foreign: id
+      foreignType: one
+      foreignAlias: ToodledoAccount
   actAs:
     Timestampable: ~
